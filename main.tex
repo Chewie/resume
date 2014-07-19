@@ -1,0 +1,142 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.9]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Kévin} % Your first name
+\familyname{Sztern} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Computer science student}
+%\address{123 Broadway}{City, State 12345}
+%\mobile{(000) 111 1111}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{sztern.kevin@gmail.com}
+\homepage{kevinsztern.fr}{kevinsztern.fr} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{github.com/chewie}
+%\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{I am a 5\textsuperscript{th} year CS student from France, interested in software
+%development and teaching it to everyone, looking for an internship in
+%software engineering}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2008--Present}{Computer science student}{\textsc{EPITA}}{Specialized in machine learning and data analytics}{}{Temporary leave between 2010 and 2012 for health reasons}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\subsection{Computer related}
+
+\cvcomputer{Languages}{C, modern C++, Python, sh, OCaml, SQL,\\occasional web development}{Systems}{GNU/Linux, Windows, BSD basics}
+\cvcomputer{DevOps}{Docker, AWS, Heroku, OpenStack,\\Ansible, Salt}{Misc.}{Unix system administration, IPv6 networking,\\security basics, functional programming}
+
+\subsection{Languages}
+
+\cvcomputer{French}{Native speaker}{English}{Fluent (TOEIC: 990)}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Jobs and internships}
+
+\cventry{Jan.2014--Present}{Teaching assistant}{\textsc{EPITA}}{}{}
+{Teaching C, C++ and Unix programming to third year students. In charge of quality assurance for internal processes, along with organization of specialized support lessons for struggling students.}
+
+\cventry{Sep.2013--Jan.2014}{Internship: embedded Android virtualization}{Thales Communications \& Security}{}{}
+{Development of a secure virtualized environment for embedded devices. Integration and management of a team of 15 persons around the project, and system administration of the research platform.}
+
+\cventry{Oct.2012--Jul.2012}{Teaching assistant}{\textsc{EPITA}}{}{}
+{Teaching advanced OCaml and C to second year students.}
+
+\cventry{Jun.2010--Jul.2010}{Internship: Image processing in Common Lisp}{\textsc{LRDE} (EPITA Research and Development Lab)}{}{}
+{Participation on Climb, a generic image processing suite in Common Lisp. In particular, design and development of the image format management layer.}
+
+\cventry{Jun.2009--Jul2009}{Internship: Distributed GPGPU computing}{\textsc{LCMCP} (National Center for Scientific Research)}{}{}
+{Architecture of a GPGPU cluster for the HPU4Science project to train artificial neural networks to deconvolution
+using particle swarm optimization.}
+
+\subsection{Projects}
+
+\cventry{}{JungleOS}{}{}{}
+{Development of a Linux distribution from scratch, with custom made coreutils, liveCD and a package manager written in OCaml.}
+
+\cventry{}{MuffinReader}{http://github.com/Chewie/MuffinReader}{}{}
+{A web application for viewing the newsgroups used at EPITA.}
+
+\cventry{}{IPv6 certification}{http://ipv6.he.net/certification}{}{}{The certification involves setting up an IPv6 ready server with various services (HTTP, MTA\ldots), along with
+verification of basic IPv6 knowledge.}
+
+\cventry{}{K}{http://k.lse.epita.fr}{}{}{Development of a x86 kernel from scratch.}
+
+\cventry{}{Former president of GConfs}{http://gconfs.fr}{}{}{President of the GConfs student association, dedicated to offering talks and presentations to other students.}
+
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cventry{}{Close up and stage magic}{}{}{}{Semi-professional performer for 7 years}
+
+\cventry{}{Juggling}{}{}{}{Several conventions around Europe}
+
+
+\end{document}
